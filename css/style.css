@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #EDF2F3;
+}
+ol,ul {list-style: none;}
+
+* {box-sizing: border-box;}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  background-color: #0C2D48;
+  top: 4rem;
+}
+.header__container img {
+  width: 200px;
+  height: 200px;
+  margin: 20px 0 20px 0;
+  border-radius: 50%;
+  border: 3px solid #B1D4E0;
+  background: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.header__title {
+  font-size: 3vmin;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.cards .card__wrapper {
+  width: calc(100% / 4);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  box-sizing: border-box;
+}
+.cards .card1 {
+  background: #da3f3d;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.cards .card2 {background: #f5a72a;}
+.cards .card3 {background: #003d5b;}
+.cards .card4 {
+  background: #00403f;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.cards .card1 .img,
+.cards .card2 .img,
+.cards .card3 .img,
+.cards .card4 .img {
+  height: 65px;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards .card1 .title,
+.cards .card2 .title,
+.cards .card3 .title,
+.cards .card4 .title {
+  color: #FFF;
+  font-size: 22px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.1vw;
+  font-weight: 400;
+  height: 50px;
+}
+.cards .card1 .description,
+.cards .card2 .description,
+.cards .card3 .description,
+.cards .card4 .description {
+  color: #ffffffbf;
+  font-size: 15px;
+  height: 160px;
+  line-height: 23px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+/* Links de Redes Sociais */
+.social {
+  margin-top: 20px;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+.social>a {
+  text-decoration: none;
+  opacity: 0.6;
+  color: #FFF;
+  transition: ease-in 0.2s;
+}
+.social>a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3%;
+  background-color: #1F3541;
+  color: white;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+  padding: 10px;
+  font-size: .6vw;
+  font-weight: 400;
+}
